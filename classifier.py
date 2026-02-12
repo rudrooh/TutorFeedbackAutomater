@@ -1,0 +1,23 @@
+
+improve_keywords = ["struggled", "missed", "needs", "improve", "confused", "slow", "absent", "difficult", "hard"]
+
+strength_keywords = ["good", "very good", "impressive", "followed", "included", "correct", "Easy"]
+
+def classify_sentence (sentence):
+    sentence_lower = sentence.lower()
+
+    #sentence contains strength word -> returns label as strength
+    for word in strength_keywords:
+        if word in sentence_lower:
+            return "strength"
+    
+    #sentence contains weakness word -> returns label as improvement
+    for word in improve_keywords:
+        if word in sentence_lower:
+            return "weakness"
+    
+    return "neutral"
+
+'''
+Capable simple parsing. However, issue comes when
+'''
