@@ -3,5 +3,5 @@ import gspread
 
 gc = gspread.service_account(filename = 'service-account.json')
 sheet = gc.open("WeeklyTutorFeedback").sheet1
-data = sheet.get_all_records()
-print(data)
+alldata = sheet.get_all_records()
+
