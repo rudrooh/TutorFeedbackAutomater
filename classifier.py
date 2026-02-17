@@ -55,7 +55,7 @@ for row in alldata:
             "topic": topic,
             "feedback": w   
         })
-    })
+    }):
 
 #Print Feedback Summary
 
